@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#sec1{
+    height: 10vh;
+    text-align: center;
+
+}
+#sec2{
+    text-align: center;
+    height: 500px;
+    color: #fff;
+    background-color: #000000e0;
+}
+#logo{
+    margin: 30px;
+}
+#sec3{
+    padding: 20px;
+    text-align:justify;
+    margin: 20px;
+}
+.secM{
+    display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.maintext{
+    margin: 2px;
+   width: 50vw;
+    font-size: larger;
+    font-weight:400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team{
+    margin: 20px;
+    font-size: 2.5rem;
+}
+   /* CSS for the "Our Projects" section */
+   .projects-section {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.2s;
+    width: 300px; /* Fixed width for each card */
+    height: 300px;
+    display: inline-block;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #666;
+}
+footer {
+    background-color: #000000e0;
+    color: #d8d6d6;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mail,#phn{
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: larger;
+}
+.social {
+    margin: 10px 0;
+}
+
+.social p {
+    font-size: 24px;
+}
+
+.social i {
+    margin: 0 10px; 
+}
+
+/* Style for links on hover */
+@media screen and (max-width: 768px) {
+    
+    #logo {
+        width: 150px;
+        height: 120px;
+    }
+    .navbar{
+        height: auto;
+    }
+    #sec2{
+        height: 400px;
+    }
+    .maintext {
+        justify-items: center;
+        font-size: 1rem;
+        width: 90vw;
+        height: auto;
+        margin: 0;
+    }
+
+    .project-card {
+        width: 80%; 
+        height: auto;
+    }
+    .team button {
+        font-size: 1rem;
+    }
+    .social p {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+
+    .social i {
+        margin: 0 3px; /* Adjust the spacing between icons for smaller screens */
+    }
+}
+
+
+
+/* new team */
+  /* Container for team members */
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Team member card styles */
+.team-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    /* width: calc(33.33% - 40px);  */
+    /* Adjust card width based on the desired number of cards per row */
+    text-align: center;
+}
+
+/* Team member image styles */
+.team-member-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .team-card {
+        width: calc(50% - 40px); /* Adjust for 2 cards per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-card {
+        width: calc(100% - 40px); /* Adjust for 1 card per row on mobile screens */
+    }
+}
