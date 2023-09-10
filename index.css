@@ -16,6 +16,13 @@ body::-webkit-scrollbar{
     text-align: center;
 
 }
+.tag{
+    background-color: #000000e0;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+
+}
 #sec2{
     text-align: center;
     height: 500px;
